@@ -45,7 +45,7 @@ HTMLWidgets.widget({
 		.on("click", function(d) { 
             console.log("Selected words:"+d.text);  
 			if (typeof Shiny != 'undefined') {
-			Shiny.onInputChange('d3word',d.text) }
+			Shiny.onInputChange('d3word',[d.text, Math.random()]) }
 		});
   }
    
