@@ -34,7 +34,7 @@ HTMLWidgets.widget({
       .data(words);
         
     var words=wordCloudGraph.enter().append("text")
-        .style("font-size", function(d) { return d.size*1.8 + "px"; })
+        .style("font-size", function(d) { return d.size*1.2 + "px"; })
         .style("font-family", "Impact")
         .style("fill", function(d, i) { return fill(i); })
         .attr("text-anchor", "middle")
